@@ -1,0 +1,11 @@
+# cmd.exe parses batch files as it reads them, so a checkout that turns CRLF into LF breaks the
+# parse half way through the file - and the fragments it then executes look nothing like the
+# script. Pin the line ending regardless of the cloner's core.autocrlf.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binaries: never normalise line endings or encoding inside these.
+*.ico binary
+*.vvm binary
+*.dll binary
+*.exe binary

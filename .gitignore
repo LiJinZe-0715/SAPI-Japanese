@@ -1,0 +1,25 @@
+# Build output
+build/
+out/
+dist/
+
+# voicevox_core release + .vvm packs, when unpacked next to the sources
+third_party/
+
+# Visual Studio / CMake
+*.sln
+*.vcxproj
+*.vcxproj.*
+CMakeUserPresets.json
+.vs/
+
+# Rendered audio from the check tool
+*.wav
+
+# JetBrains project files: the whole directory, not just the per-user parts. The .iml and
+# modules.xml track the local IDE version and JDK, so committing them means every clone edit
+# turns into a diff that helps nobody.
+.idea/
+
+# Agent-local workspace state
+.workbuddy-ai/

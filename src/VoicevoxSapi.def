@@ -1,0 +1,9 @@
+; COM entry points. A .def rather than __declspec(dllexport): the SDK headers already declare
+; DllGetClassObject/DllCanUnloadNow with STDAPI, and adding dllexport to the definition is a
+; C2375 "different linkage" error.
+LIBRARY VoicevoxSapi
+EXPORTS
+    DllGetClassObject
+    DllCanUnloadNow
+    DllRegisterServer
+    DllUnregisterServer

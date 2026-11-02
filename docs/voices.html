@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VOICEVOX 语音对照表</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1a1d21;--muted:#6b7280;--line:#e5e7eb;--accent:#2f6f4f;--chip:#eef3f0}
+*{box-sizing:border-box}
+body{margin:0;padding:32px 24px 64px;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,'Segoe UI','Microsoft YaHei',sans-serif}
+header{max-width:1080px;margin:0 auto 20px}
+h1{margin:0 0 6px;font-size:22px;letter-spacing:.01em}
+.sub{color:var(--muted);font-size:13px}
+.tools{max-width:1080px;margin:0 auto 14px;display:flex;gap:10px;align-items:center}
+input{flex:1;max-width:320px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;font-size:14px;background:var(--card)}
+input:focus{outline:2px solid var(--accent);outline-offset:-1px}
+.count{color:var(--muted);font-size:13px}
+table{width:100%;max-width:1080px;margin:0 auto;border-collapse:separate;border-spacing:0 8px}
+th{text-align:left;font-size:12px;font-weight:600;color:var(--muted);padding:0 14px 6px;letter-spacing:.04em;text-transform:uppercase}
+td{background:var(--card);padding:12px 14px;vertical-align:top;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+td:first-child{border-left:1px solid var(--line);border-radius:10px 0 0 10px}
+td:last-child{border-right:1px solid var(--line);border-radius:0 10px 10px 0}
+.zh{font-weight:600}
+.ja{color:var(--muted);font-size:12px}
+.en{color:var(--muted);font-size:12px}
+.vibe{color:var(--accent);font-size:13px;white-space:nowrap}
+.styles{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:var(--chip);border-radius:999px;padding:2px 10px;font-size:12px}
+.pack{color:var(--muted);font-size:11px;font-family:ui-monospace,Consolas,monospace}
+tr[hidden]{display:none}
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+footer{max-width:1080px;margin:28px auto 0;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<header><h1>VOICEVOX 语音对照表</h1><div class="sub">136 个语音 / 52 位角色 · 名称与音质说明取自 voicevox.hiroshiba.jp，中文为意译，日文为原文<br>Windows 语音列表里显示的就是「角色 / 风格 · 音质」，例如「俊达萌 / 普通 · 孩子气高音」</div></header>
+<div class="tools"><label class="vh" for="q">搜索角色名、风格或音质</label><input id="q" type="search" placeholder="搜索角色名、风格或音质…"><span class="count" id="n"></span></div>
+<table>
+<thead><tr><th style="width:22%">角色</th><th style="width:22%">音质</th><th>可用风格</th><th style="width:10%">模型包</th></tr></thead>
+<tbody>
+<tr><td><div class="zh">四国梅丹</div><div class="ja">四国めたん</div><div class="en">Shikoku Metan</div></td><td><div class="vibe">清晰有底气</div></td><td><div class="styles"><span class="chip" title="あまあま">甜甜</span><span class="chip" title="ノーマル">普通</span><span class="chip" title="セクシー">性感</span><span class="chip" title="ツンツン">傲娇</span><span class="chip" title="ささやき">低语</span><span class="chip" title="ヒソヒソ">窃窃私语</span></div></td><td><div class="pack">0.vvm</div></td></tr>
+<tr><td><div class="zh">俊达萌</div><div class="ja">ずんだもん</div><div class="en">Zundamon</div></td><td><div class="vibe">孩子气高音</div></td><td><div class="styles"><span class="chip" title="あまあま">甜甜</span><span class="chip" title="ノーマル">普通</span><span class="chip" title="セクシー">性感</span><span class="chip" title="ツンツン">傲娇</span><span class="chip" title="ささやき">低语</span><span class="chip" title="ヒソヒソ">窃窃私语</span><span class="chip" title="ヘロヘロ">软塌塌</span><span class="chip" title="なみだめ">泪眼</span></div></td><td><div class="pack">0.vvm</div></td></tr>
+<tr><td><div class="zh">春日部紬</div><div class="ja">春日部つむぎ</div><div class="en">Kasukabe Tsumugi</div></td><td><div class="vibe">元气明亮</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">0.vvm</div></td></tr>
+<tr><td><div class="zh">波音律</div><div class="ja">波音リツ</div><div class="en">Namine Ritsu</div></td><td><div class="vibe">低沉稳酷</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="クイーン">女王</span></div></td><td><div class="pack">3.vvm</div></td></tr>
+<tr><td><div class="zh">雨晴哈乌</div><div class="ja">雨晴はう</div><div class="en">Amehare Hau</div></td><td><div class="vibe">温柔可爱</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">0.vvm</div></td></tr>
+<tr><td><div class="zh">玄野武宏</div><div class="ja">玄野武宏</div><div class="en">Kurono Takehiro</div></td><td><div class="vibe">爽朗青年</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="喜び">喜悦</span><span class="chip" title="ツンギレ">炸毛傲娇</span><span class="chip" title="悲しみ">悲恸</span></div></td><td><div class="pack">4.vvm</div></td></tr>
+<tr><td><div class="zh">白上虎太郎</div><div class="ja">白上虎太郎</div><div class="en">Shirakami Kotarou</div></td><td><div class="vibe">刚变声的少年</div></td><td><div class="styles"><span class="chip" title="ふつう">普通</span><span class="chip" title="わーい">欢呼</span><span class="chip" title="びくびく">战战兢兢</span><span class="chip" title="おこ">生气</span><span class="chip" title="びえーん">大哭</span></div></td><td><div class="pack">9.vvm</div></td></tr>
+<tr><td><div class="zh">青山龙星</div><div class="ja">青山龍星</div><div class="en">Aoyama Ryusei</div></td><td><div class="vibe">厚重低音</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="熱血">热血</span><span class="chip" title="不機嫌">不高兴</span><span class="chip" title="喜び">喜悦</span><span class="chip" title="しっとり">温婉</span><span class="chip" title="かなしみ">哀伤</span><span class="chip" title="囁き">耳语</span></div></td><td><div class="pack">15.vvm</div></td></tr>
+<tr><td><div class="zh">冥鸣日葵</div><div class="ja">冥鳴ひまり</div><div class="en">Meimei Himari</div></td><td><div class="vibe">柔软温暖</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">1.vvm</div></td></tr>
+<tr><td><div class="zh">九州空</div><div class="ja">九州そら</div><div class="en">Kyushu Sora</div></td><td><div class="vibe">成熟有品</div></td><td><div class="styles"><span class="chip" title="あまあま">甜甜</span><span class="chip" title="ノーマル">普通</span><span class="chip" title="セクシー">性感</span><span class="chip" title="ツンツン">傲娇</span><span class="chip" title="ささやき">低语</span></div></td><td><div class="pack">2.vvm</div></td></tr>
+<tr><td><div class="zh">饼子小姐</div><div class="ja">もち子さん</div><div class="en">Mochiko-san</div></td><td><div class="vibe">清晰平稳</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="セクシー／あん子">性感／馅子</span><span class="chip" title="泣き">哭泣</span><span class="chip" title="怒り">愤怒</span><span class="chip" title="喜び">喜悦</span><span class="chip" title="のんびり">悠闲</span></div></td><td><div class="pack">15.vvm</div></td></tr>
+<tr><td><div class="zh">剑崎雌雄</div><div class="ja">剣崎雌雄</div><div class="en">Kenzaki Mesuo</div></td><td><div class="vibe">沉稳安心</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">4.vvm</div></td></tr>
+<tr><td><div class="zh">WhiteCUL</div><div class="ja">WhiteCUL</div><div class="en">WhiteCUL</div></td><td><div class="vibe">直率顺耳</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="たのしい">开心</span><span class="chip" title="かなしい">难过</span><span class="chip" title="びえーん">大哭</span></div></td><td><div class="pack">8.vvm</div></td></tr>
+<tr><td><div class="zh">后鬼</div><div class="ja">後鬼</div><div class="en">Goki</div></td><td><div class="vibe">包容娴静</div></td><td><div class="styles"><span class="chip" title="人間ver.">人类版</span><span class="chip" title="ぬいぐるみver.">玩偶版</span><span class="chip" title="人間（怒り）ver.">人类（愤怒）版</span><span class="chip" title="鬼ver.">鬼版</span></div></td><td><div class="pack">7.vvm</div></td></tr>
+<tr><td><div class="zh">No.7</div><div class="ja">No.7</div><div class="en">No.7</div></td><td><div class="vibe">扎实凛然</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="アナウンス">播报</span><span class="chip" title="読み聞かせ">朗读</span></div></td><td><div class="pack">6.vvm</div></td></tr>
+<tr><td><div class="zh">迷你式爷爷</div><div class="ja">ちび式じい</div><div class="en">Chibishiki-jii</div></td><td><div class="vibe">沙哑亲切</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">10.vvm</div></td></tr>
+<tr><td><div class="zh">樱歌美子</div><div class="ja">櫻歌ミコ</div><div class="en">Ouka Miko</div></td><td><div class="vibe">可爱少女</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="第二形態">第二形态</span><span class="chip" title="ロリ">萝莉</span></div></td><td><div class="pack">11.vvm</div></td></tr>
+<tr><td><div class="zh">小夜/SAYO</div><div class="ja">小夜/SAYO</div><div class="en">Sayo</div></td><td><div class="vibe">温和宽厚</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">15.vvm</div></td></tr>
+<tr><td><div class="zh">护士机器人T型</div><div class="ja">ナースロボ＿タイプＴ</div><div class="en">Nurse Robo Type T</div></td><td><div class="vibe">冷静克制</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="楽々">轻松</span><span class="chip" title="恐怖">恐惧</span><span class="chip" title="内緒話">悄悄话</span></div></td><td><div class="pack">11.vvm</div></td></tr>
+<tr><td><div class="zh">†圣骑士 红樱†</div><div class="ja">†聖騎士 紅桜†</div><div class="en">Holy Knight Benizakura</div></td><td><div class="vibe">爽快干脆</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">12.vvm</div></td></tr>
+<tr><td><div class="zh">雀松朱司</div><div class="ja">雀松朱司</div><div class="en">Wakamatsu Akashi</div></td><td><div class="vibe">安静稳重</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">12.vvm</div></td></tr>
+<tr><td><div class="zh">麒之岛宗麟</div><div class="ja">麒ヶ島宗麟</div><div class="en">Kigashima Sourin</div></td><td><div class="vibe">有味道的大叔</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">12.vvm</div></td></tr>
+<tr><td><div class="zh">春歌娜娜</div><div class="ja">春歌ナナ</div><div class="en">Haruka Nana</div></td><td><div class="vibe">活泼有力</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">13.vvm</div></td></tr>
+<tr><td><div class="zh">猫使阿尔</div><div class="ja">猫使アル</div><div class="en">Nekotsuka Aru</div></td><td><div class="vibe">厚实随和</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="おちつき">沉稳</span><span class="chip" title="うきうき">雀跃</span><span class="chip" title="つよつよ">强强</span><span class="chip" title="へろへろ">软塌塌</span></div></td><td><div class="pack">13.vvm</div></td></tr>
+<tr><td><div class="zh">猫使比</div><div class="ja">猫使ビィ</div><div class="en">Nekotsuka Bii</div></td><td><div class="vibe">纯真天真</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="おちつき">沉稳</span><span class="chip" title="人見知り">怕生</span><span class="chip" title="つよつよ">强强</span></div></td><td><div class="pack">13.vvm</div></td></tr>
+<tr><td><div class="zh">中国兔</div><div class="ja">中国うさぎ</div><div class="en">Chugoku Usagi</div></td><td><div class="vibe">幽玄青涩</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="おどろき">惊讶</span><span class="chip" title="こわがり">胆小</span><span class="chip" title="へろへろ">软塌塌</span></div></td><td><div class="pack">3.vvm</div></td></tr>
+<tr><td><div class="zh">栗田玛珑</div><div class="ja">栗田まろん</div><div class="en">Kurita Maron</div></td><td><div class="vibe">中性低沉</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">14.vvm</div></td></tr>
+<tr><td><div class="zh">艾尔炭</div><div class="ja">あいえるたん</div><div class="en">Aierutan</div></td><td><div class="vibe">舒适柔和</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">14.vvm</div></td></tr>
+<tr><td><div class="zh">满别花丸</div><div class="ja">満別花丸</div><div class="en">Manbetsu Hanamaru</div></td><td><div class="vibe">生动突出</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="元気">元气</span><span class="chip" title="ささやき">低语</span><span class="chip" title="ぶりっ子">装可爱</span><span class="chip" title="ボーイ">少年</span></div></td><td><div class="pack">14.vvm</div></td></tr>
+<tr><td><div class="zh">琴咏妮娅</div><div class="ja">琴詠ニア</div><div class="en">Kotoyomi Nia</div></td><td><div class="vibe">顺滑无机质</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">14.vvm</div></td></tr>
+<tr><td><div class="zh">Voidoll</div><div class="ja">Voidoll</div><div class="en">Voidoll</div></td><td><div class="vibe">谦逊电子音</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">17.vvm</div></td></tr>
+<tr><td><div class="zh">尊子</div><div class="ja">ぞん子</div><div class="en">Zonko</div></td><td><div class="vibe">热血真切</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="低血圧">低血压</span><span class="chip" title="覚醒">觉醒</span><span class="chip" title="実況風">实况解说风</span></div></td><td><div class="pack">18.vvm</div></td></tr>
+<tr><td><div class="zh">中部剑</div><div class="ja">中部つるぎ</div><div class="en">Chubu Tsurugi</div></td><td><div class="vibe">凛然有威</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="怒り">愤怒</span><span class="chip" title="ヒソヒソ">窃窃私语</span><span class="chip" title="おどおど">怯生生</span><span class="chip" title="絶望と敗北">绝望与败北</span></div></td><td><div class="pack">18.vvm</div></td></tr>
+<tr><td><div class="zh">离途</div><div class="ja">離途</div><div class="en">Rito</div></td><td><div class="vibe">气声包裹</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="シリアス">严肃</span></div></td><td><div class="pack">19.vvm</div></td></tr>
+<tr><td><div class="zh">黑泽冴白</div><div class="ja">黒沢冴白</div><div class="en">Kurosawa Kohaku</div></td><td><div class="vibe">强势有张力</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">19.vvm</div></td></tr>
+<tr><td><div class="zh">幽灵酱</div><div class="ja">ユーレイちゃん</div><div class="en">Yurei-chan</div></td><td><div class="vibe">柔和飘荡</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="甘々">甜甜</span><span class="chip" title="哀しみ">哀伤</span><span class="chip" title="ささやき">低语</span><span class="chip" title="ツクモちゃん">九十九酱</span></div></td><td><div class="pack">20.vvm</div></td></tr>
+<tr><td><div class="zh">东北俊子</div><div class="ja">東北ずん子</div><div class="en">Tohoku Zunko</div></td><td><div class="vibe">娴静亲和</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">21.vvm</div></td></tr>
+<tr><td><div class="zh">东北切蒲英</div><div class="ja">東北きりたん</div><div class="en">Tohoku Kiritan</div></td><td><div class="vibe">清丽内敛</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">21.vvm</div></td></tr>
+<tr><td><div class="zh">东北伊达子</div><div class="ja">東北イタコ</div><div class="en">Tohoku Itako</div></td><td><div class="vibe">优雅余韵</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">21.vvm</div></td></tr>
+<tr><td><div class="zh">馅子怪</div><div class="ja">あんこもん</div><div class="en">Ankomon</div></td><td><div class="vibe">收敛好胜</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="つよつよ">强强</span><span class="chip" title="よわよわ">弱弱</span><span class="chip" title="けだるげ">慵懒</span><span class="chip" title="ささやき">低语</span></div></td><td><div class="pack">22.vvm</div></td></tr>
+<tr><td><div class="zh">夜语帐</div><div class="ja">夜語トバリ</div><div class="en">Yogatari Tobari</div></td><td><div class="vibe">理性清晰</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="明るい">明朗</span><span class="chip" title="哀しみ">哀伤</span><span class="chip" title="呆れ">无语</span></div></td><td><div class="pack">24.vvm</div></td></tr>
+<tr><td><div class="zh">晓记御魂</div><div class="ja">暁記ミタマ</div><div class="en">Akatsuki Mitama</div></td><td><div class="vibe">虚幻漂浮</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span><span class="chip" title="怒り">愤怒</span><span class="chip" title="哀しみ">哀伤</span><span class="chip" title="ささやき">低语</span></div></td><td><div class="pack">24.vvm</div></td></tr>
+<tr><td><div class="zh">里石由香</div><div class="ja">里石ユカ</div><div class="en">Satoishi Yuka</div></td><td><div class="vibe">含苞清纯</div></td><td><div class="styles"><span class="chip" title="つぼみ">花蕾</span></div></td><td><div class="pack">24.vvm</div></td></tr>
+<tr><td><div class="zh">男声2</div><div class="ja">男声2</div><div class="en">Male 2</div></td><td><div class="vibe">通用男声</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">n0.vvm</div></td></tr>
+<tr><td><div class="zh">男声1</div><div class="ja">男声1</div><div class="en">Male 1</div></td><td><div class="vibe">通用男声</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">n0.vvm</div></td></tr>
+<tr><td><div class="zh">男声3</div><div class="ja">男声3</div><div class="en">Male 3</div></td><td><div class="vibe">通用男声</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">n0.vvm</div></td></tr>
+<tr><td><div class="zh">女声4</div><div class="ja">女声4</div><div class="en">Female 4</div></td><td><div class="vibe">通用女声</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">n0.vvm</div></td></tr>
+<tr><td><div class="zh">女声3</div><div class="ja">女声3</div><div class="en">Female 3</div></td><td><div class="vibe">通用女声</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">n0.vvm</div></td></tr>
+<tr><td><div class="zh">女声1</div><div class="ja">女声1</div><div class="en">Female 1</div></td><td><div class="vibe">通用女声</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">n0.vvm</div></td></tr>
+<tr><td><div class="zh">女声6</div><div class="ja">女声6</div><div class="en">Female 6</div></td><td><div class="vibe">通用女声</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">n0.vvm</div></td></tr>
+<tr><td><div class="zh">女声2</div><div class="ja">女声2</div><div class="en">Female 2</div></td><td><div class="vibe">通用女声</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">n0.vvm</div></td></tr>
+<tr><td><div class="zh">女声5</div><div class="ja">女声5</div><div class="en">Female 5</div></td><td><div class="vibe">通用女声</div></td><td><div class="styles"><span class="chip" title="ノーマル">普通</span></div></td><td><div class="pack">n0.vvm</div></td></tr>
+</tbody>
+</table>
+<footer>由 voicevox-voices-page 生成 · 与 DLL 注册语音共用同一份名称表，改动 src/voices_i18n.cpp 后重新生成即可。</footer>
+<script>
+const q=document.getElementById('q'),n=document.getElementById('n');
+const rows=[...document.querySelectorAll('tbody tr')];
+function apply(){const t=q.value.trim().toLowerCase();let hit=0;
+rows.forEach(r=>{const ok=!t||r.textContent.toLowerCase().includes(t);
+r.hidden=!ok;if(ok)hit++;});
+n.textContent=hit+' / '+rows.length;}
+q.addEventListener('input',apply);apply();
+</script>
+</body>
+</html>

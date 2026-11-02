@@ -1,0 +1,11 @@
+// Resources for the single-file installer (VoicevoxSapiSetup.exe). This is the executable users
+// download, so it is the one SmartScreen and Explorer actually show.
+
+#include <winver.h>
+
+#define VV_DESCRIPTION "VOICEVOX SAPI installer"
+#define VV_INTERNAL    "VoicevoxSapiSetup"
+#define VV_ORIGINAL    "VoicevoxSapiSetup.exe"
+#define VV_FILETYPE    VFT_APP
+
+#include "version_info.inc"
