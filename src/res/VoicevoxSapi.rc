@@ -1,0 +1,12 @@
+// Resources for the SAPI engine DLL. The icon matters here even though the DLL has no window:
+// "Apps & features" reads DisplayIcon from the DLL path, so this is the picture the user sees
+// next to the product in Settings.
+
+#include <winver.h>
+
+#define VV_DESCRIPTION "VOICEVOX in-process SAPI5 TTS engine"
+#define VV_INTERNAL    "VoicevoxSapi"
+#define VV_ORIGINAL    "VoicevoxSapi.dll"
+#define VV_FILETYPE    VFT_DLL
+
+#include "version_info.inc"

@@ -1,0 +1,10 @@
+// Resources for the console installer (voicevox-sapi-setup.exe).
+
+#include <winver.h>
+
+#define VV_DESCRIPTION "VOICEVOX SAPI installer (command line)"
+#define VV_INTERNAL    "voicevox-sapi-setup"
+#define VV_ORIGINAL    "voicevox-sapi-setup.exe"
+#define VV_FILETYPE    VFT_APP
+
+#include "version_info.inc"

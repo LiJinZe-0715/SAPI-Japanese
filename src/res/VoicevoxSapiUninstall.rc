@@ -1,0 +1,11 @@
+// Resources for the uninstaller (VoicevoxSapiUninstall.exe). Its icon is what "Apps & features"
+// falls back to when the DisplayIcon path in the uninstall entry cannot be resolved.
+
+#include <winver.h>
+
+#define VV_DESCRIPTION "VOICEVOX SAPI uninstaller"
+#define VV_INTERNAL    "VoicevoxSapiUninstall"
+#define VV_ORIGINAL    "VoicevoxSapiUninstall.exe"
+#define VV_FILETYPE    VFT_APP
+
+#include "version_info.inc"
